@@ -1,0 +1,39 @@
+.icon-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.icon-row2 {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 5px;
+}
+.icon-row__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.icon-row__icon i {
+  font-size: 35px;
+}
+.icon-row__icon span {
+  margin-top: 20px;
+}
+
+.icon-row2 .icon-row__icon {
+  padding-right: 90px;
+}
+
+.icon-row__icon-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
+  background-color: tomato;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 70px;
+  left: 55px;
+}

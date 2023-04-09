@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find - CoCoaTalk</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>SKT</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fa-solid fa-battery-full fa-lg"></i>
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Find</h1>
+      <div class="screen-headar__icons">
+        <div>
+          <span><i class="fa-solid fa-magnifying-glass fa-2x"></i></span>
+          <span><i class="fa-solid fa-gear fa-2x"></i></span>
+          <span class="screen-header__dot"></span>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-screen">
+      <div class="icon-row">
+        <div class="icon-row__icon">
+          <i class="fa-solid fa-qrcode"></i>
+          <span>QR Code</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fa-regular fa-address-book"></i>
+          <span>Add by Contact</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fa-regular fa-circle-user"></i>
+          <span>Add by ID</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fa-regular fa-envelope"></i>
+          <span>Invite</span>
+        </div>
+      </div>
+      <div class="recommended-friends">
+        <h6 class="recommended-friends__title">Recommended Friends</h6>
+        <span> You have no recommended friends. </span>
+      </div>
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <h4>Open Chat</h4>
+          <span>
+            Go to Openchat Home <i class="fa-solid fa-chevron-right fa-xs"></i>
+          </span>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#Elden Ring</h5>
+            <h6 class="open-post__hashtags">#soul#difficult#you die</h6>
+            <div class="open-post__members">
+              <img
+                src="data:image/png;base64,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"
+              />
+              <span class="open-post__member-count">150,344 members</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img
+                src="https://image.api.playstation.com/vulcan/ap/rnd/202202/2502/SIpwLFe74yGVl77WS0WfqR4J.jpg"
+              />
+              <div class="open-post__heart-count">
+                <i class="fa-solid fa-heart fa-xs"></i><span>1567</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#The Legend Of Zelda</h5>
+            <h6 class="open-post__hashtags">#openworld#green thing#skylands</h6>
+            <div class="open-post__members">
+              <img
+                src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v1484846211/y0kvtyvhwmeoi0xaaoev.png"
+              />
+              <span class="open-post__member-count">1,045,433 members</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img
+                src="https://styles.redditmedia.com/t5_6zlggw/styles/communityIcon_f7lhap49s2o91.jpg?width=256&s=56e04eedc31e8dc33ebe85ab6fcf04f68509e260"
+              />
+              <div class="open-post__heart-count">
+                <i class="fa-solid fa-heart fa-xs"></i><span>13579</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <i class="fa-regular fa-user fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">1</span>
+            <i class="far fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html">
+            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <span class="nav__dot"></span>
+            <i class="fa-solid fa-ellipsis fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <script
+      src="https://kit.fontawesome.com/8a5b306530.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
